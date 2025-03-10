@@ -10,23 +10,29 @@ Echo App is an anonymous platform where users can share their thoughts, experien
 - **Real-time Updates**: Posts and comments update in real-time using Firestore.
 - **User-friendly UI**: A clean and minimalistic design for easy navigation.
 
-## Installation
+### Installation
 
 1. **Clone the Repository**
+
    ```sh
-   git clone https://github.com/yourusername/echo-app.git
-   cd echo-app
+   git clone https://github.com/your-username/echo_app.git
+   cd echo_app
    ```
+
 2. **Install Dependencies**
+
    ```sh
    flutter pub get
    ```
-3. **Set up Firebase**
 
-   - Create a Firebase project in [Firebase Console](https://console.firebase.google.com/)
-   - Enable **Authentication** (Email/Password)
-   - Set up **Cloud Firestore** for real-time database.
-   - Download `google-services.json` (for Android) and place it in `android/app/`
+3. **Setup Firebase**
+
+   - Run the following command to configure Firebase with your project:
+     ```sh
+     flutterfire configure
+     ```
+   - This will generate `firebase_options.dart` inside the `lib` folder.
+   - **Important**: Add `lib/firebase_options.dart` to `.gitignore` to keep credentials secure.
 
 4. **Run the App**
    ```sh
